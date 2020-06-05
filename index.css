@@ -470,13 +470,12 @@ p {
   margin-bottom: 31px;
   color: #47bec7;
   letter-spacing: 2px;
-  opacity: 0.5;
 }
 
 .split-lists .split-list ul li {
   font-size: 16px;
   line-height: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .split-lists .split-list ul li a {
