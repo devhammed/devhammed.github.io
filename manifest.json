@@ -3,7 +3,7 @@
   "theme_color": "#47bec7",
   "background_color": "#ffffff",
   "description": "A wicked Software Developer",
-  "start_url": ".",
+  "start_url": "index.html",
   "display": "standalone",
   "short_name": "Hammed Oyedele (@devhammed)",
   "icons": [
