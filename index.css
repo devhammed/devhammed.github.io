@@ -312,6 +312,12 @@ p {
   margin-top: 5%;
 }
 
+@media (max-width: 500px) {
+  .split-lists {
+    margin-top: 15%;
+  }
+}
+
 .split-lists .split-list {
   width: 30%;
   display: inline-block;
