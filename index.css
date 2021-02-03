@@ -218,7 +218,7 @@ p {
 
 @media (max-width: 800px) {
   .fs-split .split-image {
-    height: 80vh;
+    height: 50vh;
     width: 100%;
   }
 }
@@ -327,7 +327,8 @@ p {
 
 @media (max-width: 500px) {
   .split-lists .split-list {
-    width: 90%;
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 
@@ -339,6 +340,12 @@ p {
   margin-bottom: 31px;
   color: #47bec7;
   letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .split-lists .split-list h2.empty {
+    display: none;
+  }
 }
 
 .split-lists .split-list ul li {
