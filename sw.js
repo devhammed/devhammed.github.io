@@ -42,6 +42,7 @@ self.addEventListener('fetch', function (event) {
       event.request.method,
       event.request.url
     )
+
     return
   }
 
@@ -50,11 +51,13 @@ self.addEventListener('fetch', function (event) {
       var networked = fetch(event.request)
         .then(fetchedFromNetwork, unableToResolve)
         .catch(unableToResolve)
+
       console.log(
         'WORKER: fetch event',
         cached ? '(cached)' : '(network)',
         event.request.url
       )
+
       return cached || networked
 
       function fetchedFromNetwork (response) {
