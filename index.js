@@ -1,10 +1,13 @@
-function devhammed() {
+function devhammedOnReady() {
   var copyrightYear = document.getElementById('copyright-year')
-  copyrightYear.innerText = new Date().getFullYear()
+
+  if (copyrightYear) {
+    copyrightYear.innerText = new Date().getFullYear()
+  }
 }
 
 if (document.readyState === 'complete') {
-  devhammed()
+  devhammedOnReady()
 } else {
-  document.addEventListener('DOMContentLoaded', devhammed)
+  document.addEventListener('DOMContentLoaded', devhammedOnReady)
 }
