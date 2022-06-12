@@ -342,6 +342,10 @@ p {
   letter-spacing: 2px;
 }
 
+.split-lists .split-list h2.empty {
+  color: #061c30;
+}
+
 @media (max-width: 500px) {
   .split-lists .split-list h2.empty {
     display: none;
@@ -365,7 +369,7 @@ p {
 }
 
 .fs-split .split-image {
-  background-image: url('assets/me.png');
+  background-image: url('assets/me.jpg');
   background-position: center center;
 }
 
