@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll"
-
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "webrick"
+  gem "jekyll-theme-hacker", "~> 0.2.0"
   gem "jekyll-feed", "~> 0.12"
 end
 

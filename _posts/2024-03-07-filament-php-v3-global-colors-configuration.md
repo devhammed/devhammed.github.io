@@ -13,7 +13,7 @@ As we all know, Filament v3 introduced the concept of multiple panels but it als
 
 The new approach is nice and all but it also means you will have to configure branding colors for each panel you create or does it?
 
-After a lot of source code viewing, I discovered that Filament will end up calling `Filament\Support\Facades\FilamentColor::register([ ... ])` after booting the panel when you configure the colors in your panel service provider like:
+After a lot of source code viewing, I discovered that Filament will end up calling the `register` method of `FilamentColor` facade after booting the panel when you configure the colors in your panel service provider like:
 
 ```php
 ...
