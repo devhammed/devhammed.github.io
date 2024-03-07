@@ -2,8 +2,9 @@
 
 console.log('WORKER: executing.');
 
-var version = 'v4::';
-var offlineFundamentals = [
+const version = 'v4.0.0';
+
+const offlineFundamentals = [
     '',
     'blog',
     'assets/css/style.css',
