@@ -1,200 +1,16 @@
-/* -- CSS Reset -- */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+---
+title: "style"
+author: "Hammed Oyedele"
+---
+
+@import "{{ site.theme }}";
+
+#a-title {
+  color: $conifer;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
+header h1:before {
   content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: 'liga' on;
-  font-feature-settings: 'liga' on;
-  margin: 0;
-}
-
-body {
-  background-color: #ffffff;
-  border-style: none;
-}
-
-body,
-p,
-a,
-a:hover {
-  color: #000000;
-}
-
-a,
-a:hover {
-  text-decoration: none;
-  border: none;
-  border-style: none;
-  box-shadow: none;
-}
-
-a {
-  color: #848d96;
-  transition-duration: 0.5s;
-  border-bottom: 1px dotted #848d96;
-}
-
-a:hover {
-  color: #47bec7;
-  transition-duration: 0.1s;
-  border-bottom: 1px dotted #47bec7;
-}
-
-/* -- Content -- */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-body {
-  background-color: #061c30;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 33px;
-  letter-spacing: -0.2px;
-  color: #848d96;
-  animation: fade-in 2s;
-}
-
-p {
-  color: #848d96;
 }
 
 .fs-split {
@@ -244,6 +60,7 @@ p {
   max-width: 640px;
   margin-top: auto;
   margin-bottom: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -281,7 +98,6 @@ p {
 
 .split-bio {
   padding: 40px 0 20px 0;
-  font-family: 'Lora', serif;
 }
 
 @media (max-width: 1200px) {
@@ -319,7 +135,7 @@ p {
 }
 
 .split-lists .split-list {
-  width: 30%;
+  width: 45%;
   display: inline-block;
   margin-bottom: 40px;
   vertical-align: top;
@@ -369,10 +185,10 @@ p {
 }
 
 .fs-split .split-image {
-  background-image: url('assets/me.jpg');
+  background-image: url('/assets/images/me.jpg');
   background-position: center center;
 }
 
-.cv-link {
-  font-size: 16px;
+.copyright {
+  font-size: 14px;
 }

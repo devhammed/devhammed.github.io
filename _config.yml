@@ -1,0 +1,26 @@
+title: Hammed Oyedele (@devhammed)
+email: hey@hammed.dev
+description: >-
+  Welcome to Hammed's Tech Haven, where innovation meets expertise! Dive into the world of cutting-edge web and mobile application development with Hammed, a seasoned software developer with over 6 years of hands-on experience. Explore insightful articles, tutorials, and expert tips covering a vast array of technologies and frameworks, from JavaScript to Dart, FLAT Stack to Flutter, and everything in between. Stay ahead of the curve and unlock the secrets to crafting exceptional digital experiences with Hammed as your guide.
+baseurl: ""
+url: "https://hammed.dev"
+twitter_username: devhammed
+github_username: devhammed
+permalink: /blog/:year/:month/:day/:title
+
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

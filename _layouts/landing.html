@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
+    {% include head-custom.html %}
+    {% seo %}
+  </head>
+
+  <body>
+    <div class="fs-split">
+      <div class="split-image"></div>
+      <div class="split-content">
+        <div class="split-content-vertically-center">
+          <div class="split-intro">
+            <h1>Hammed Oyedele • The Wicked Developer</h1>
+            <span class="tagline">Software Engineer.</span>
+          </div>
+
+          <div class="split-bio">
+            <p>
+              Hammed is a leading software developer renowned for his
+              unparalleled expertise in creating cutting-edge web and mobile
+              applications.
+            </p>
+            <p>
+              With 6+ years of experience and a strong background in JavaScript,
+              PHP, and Dart, Hammed has repeatedly demonstrated his ability to
+              bring even the most complex projects to life with ease and
+              finesse.
+            </p>
+            <p>
+              He works with a wide variety of technologies and frameworks including but not limited to
+              FLAT Stack (FilamentPHP, Laravel LiveWire, Alpine.js, TailwindCSS), Flutter, React.js, Svelte, Adonis.js, Vue.js, Angular, Node.js, Express.js, Nest.js, MongoDB, MySQL, PostgreSQL, Redis, Docker, Kubernetes, and many more.
+            </p>
+          </div>
+          <div class="split-lists">
+            <div class="split-list">
+              <ul>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://linkedin.com/in/devhammed"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://stackoverflow.com/users/8540949"
+                    target="_blank"
+                  >StackOverflow</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="{{ 'blog/' | relative_url }}"
+                  >Blog</a>
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://codepen.io/devhammed"
+                    target="_blank"
+                    >Codepen</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://www.imdb.com/user/ur126528837/"
+                    target="_blank"
+                    >IMDB</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="split-list">
+              <ul>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://github.com/devhammed"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://profile.codersrank.io/user/devhammed"
+                    target="_blank"
+                    >CodersRank</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://twitter.com/devhammed"
+                    target="_blank"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a rel="noopener" href="mailto:{{ site.email }}">Email</a>
+                </li>
+                <li>
+                  <a rel="noopener" href="/assets/docs/cv.pdf" target="_blank"
+                    >Resume</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © {{ site.time | date: '%Y' }}, Hammed Oyedele.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% include service-worker.html %}
+  </body>
+</html>

@@ -2,13 +2,14 @@
 
 console.log('WORKER: executing.');
 
-var version = 'v3::';
+var version = 'v4::';
 var offlineFundamentals = [
-  '',
-  'index.css',
-  'assets/me.jpg',
-  'assets/cv.pdf',
-  'assets/favicon.ico',
+    '',
+    'blog',
+    'assets/css/style.css',
+    'assets/images/me.jpg',
+    'assets/docs/cv.pdf',
+    'favicon.ico',
 ];
 
 self.addEventListener('install', function (event) {
