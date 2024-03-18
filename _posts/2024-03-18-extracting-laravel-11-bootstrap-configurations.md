@@ -43,7 +43,7 @@ So let's see how we can extract these configurations into separate classes to ma
 
 We will also make use of one of the new `make:*` commands which is `artisan make:class` to create the new classes and also I will be calling them `Bootstrappers` as they are responsible for bootstrapping the application.
 
-## Extracting Middleware
+## Extracting Middlewares
 
 Start by creating a new invokable `MiddlewareBootstrapper` class using the `make:class` command.
 
