@@ -37,6 +37,8 @@ return Application::configure(basePath: dirname(__DIR__))
     ->create();
 ```
 
+Because these methods accepts `callable` type, we can extract the configurations into separate classes and use them in the `bootstrap/app.php` file.
+
 So let's see how we can extract these configurations into separate classes to make the `bootstrap/app.php` file cleaner and more maintainable.
 
 We will also make use of one of the new `make:*` commands which is `artisan make:class` to create the new classes and also I will be calling them `Bootstrappers` as they are responsible for bootstrapping the application.
@@ -167,6 +169,8 @@ return Application::configure(basePath: dirname(__DIR__))
 After extracting the middleware and exceptions configurations into separate classes, the `bootstrap/app.php` file is now cleaner and more maintainable.
 
 This also makes it easier to test the middleware and exceptions configurations as they are now separate classes.
+
+You notice the `withRouting` method too? I will be explaining how to extract the routing configurations into a separate class in the next post.
 
 I hope you find this helpful and let me know if you have any questions or suggestions.
 
