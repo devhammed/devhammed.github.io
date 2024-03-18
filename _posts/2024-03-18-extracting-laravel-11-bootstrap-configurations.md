@@ -37,7 +37,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->create();
 ```
 
-Because these methods accepts `callable` type, we can extract the configurations into separate classes and use them in the `bootstrap/app.php` file.
+Because these methods accepts `callable` type, we can extract the configurations into separate invokable classes and use them in the `bootstrap/app.php` file.
 
 So let's see how we can extract these configurations into separate classes to make the `bootstrap/app.php` file cleaner and more maintainable.
 
