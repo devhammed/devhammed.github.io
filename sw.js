@@ -2,7 +2,7 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v4.0.0';
+const version = 'v4.0.1';
 
 const offlineFundamentals = [
     '',
@@ -114,6 +114,10 @@ self.addEventListener('activate', function (event) {
       })
       .then(function () {
         console.log('WORKER: activate completed.');
+
+        if (confirm('New version available. Load it?')) {
+          window.location.reload();
+        }
       })
   );
 });
