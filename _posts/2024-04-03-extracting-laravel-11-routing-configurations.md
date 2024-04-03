@@ -7,9 +7,9 @@ tags: [Laravel, PHP]
 
 Hello, world!
 
-This is a continuation of my previous post on [Extracting Laravel 11 Bootstrap Configurations](/blog/2024/03/18/extracting-laravel-11-bootstrap-configurations).
+This continues my previous post on [Extracting Laravel 11 Bootstrap Configurations](/blog/2024/03/18/extracting-laravel-11-bootstrap-configurations).
 
-In this post, I will be discussing how to extract Laravel 11 routing configurations so let's get started.
+In this post, I will discuss how to extract Laravel 11 routing configurations so let's begin.
 
 Extracting the Laravel 11 routing configurations to a separate file is similar to other extractions that was discussed in the previous post but let me list some caveats that you need to be aware of:
 
