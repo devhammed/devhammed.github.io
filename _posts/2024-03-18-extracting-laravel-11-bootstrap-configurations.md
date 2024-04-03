@@ -170,7 +170,7 @@ After extracting the middleware and exceptions configurations into separate clas
 
 This also makes it easier to test the middleware and exceptions configurations as they are now separate classes.
 
-You notice the `withRouting` method too? I will be explaining how to extract the routing configurations into a separate class in the next post.
+You notice the `withRouting` method too? I will be explaining how to extract the routing configurations into a separate class in the [next post](/blog/2024/04/03/extracting-laravel-11-routing-configurations).
 
 I hope you find this helpful and let me know if you have any questions or suggestions.
 
