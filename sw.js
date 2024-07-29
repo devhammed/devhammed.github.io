@@ -2,7 +2,7 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v4.0.9';
+const version = 'v4.0.10';
 
 const offlineFundamentals = [
     '',
