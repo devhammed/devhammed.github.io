@@ -2,14 +2,14 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v4.0.7';
+const version = 'v4.0.8';
 
 const offlineFundamentals = [
     '',
     'blog',
     'assets/css/style.css',
     'assets/images/me.jpg',
-    'assets/docs/cv.pdf',
+    'assets/docs/resume.pdf',
     'favicon.ico',
 ];
 
