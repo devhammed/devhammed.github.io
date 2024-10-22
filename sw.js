@@ -2,7 +2,7 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v5.0.0';
+const version = 'v6.0.0';
 
 const offlineFundamentals = [
     '',
@@ -31,7 +31,11 @@ self.addEventListener('install', function (event) {
 self.addEventListener('fetch', function (event) {
   console.log('WORKER: fetch event in progress.');
 
-  if (event.request.method !== 'GET' || event.request.url.includes('lovemeetstech2024')) {
+  if (
+      event.request.method !== 'GET'
+      || event.request.url.includes('lovemeetstech2024')
+      || event.request.url.includes('googleapis.com')
+  ) {
     console.log(
       'WORKER: fetch event ignored.',
       event.request.method,
