@@ -14,7 +14,11 @@
     <header>
       <div class="container">
         <h1>
-          <a id="a-title" href="{{ 'blog' | relative_url }}">cd ./hammed.dev/blog</a>
+          {% if page.slug == 'blog' %}
+            <a id="a-title" href="{{ '/' | relative_url }}">cd ./hammed.dev</a>
+          {% else %}
+            <a id="a-title" href="{{ 'blog' | relative_url }}">cd ./hammed.dev/blog</a>
+          {% endif %}
         </h1>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
       </div>

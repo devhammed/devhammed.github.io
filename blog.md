@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+slug: blog
 ---
 
 <ul>

@@ -8,7 +8,7 @@ const offlineFundamentals = [
     '',
     'blog',
     'assets/css/style.css',
-    'assets/images/me.jpg',
+    'assets/images/hammed.jpg',
     'assets/docs/resume.pdf',
     'favicon.ico',
 ];
