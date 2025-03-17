@@ -2,15 +2,15 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v6.0.0';
+const version = 'v7.0.0';
 
 const offlineFundamentals = [
-    '',
-    'blog',
-    'assets/css/style.css',
-    'assets/images/hammed.jpg',
-    'assets/docs/resume.pdf',
-    'favicon.ico',
+  '',
+  'blog',
+  'assets/css/style.css',
+  'assets/images/photo.jpg',
+  'assets/docs/resume.pdf',
+  'favicon.ico',
 ];
 
 self.addEventListener('install', function (event) {
@@ -32,9 +32,9 @@ self.addEventListener('fetch', function (event) {
   console.log('WORKER: fetch event in progress.');
 
   if (
-      event.request.method !== 'GET'
-      || event.request.url.includes('lovemeetstech2024')
-      || event.request.url.includes('googleapis.com')
+    event.request.method !== 'GET'
+    || event.request.url.includes('lovemeetstech2024')
+    || event.request.url.includes('googleapis.com')
   ) {
     console.log(
       'WORKER: fetch event ignored.',
