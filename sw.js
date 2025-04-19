@@ -2,7 +2,7 @@
 
 console.log('WORKER: executing.');
 
-const version = 'v7.0.0';
+const version = 'v8.0.0';
 
 const offlineFundamentals = [
   '',
@@ -33,6 +33,8 @@ self.addEventListener('fetch', function (event) {
 
   if (
     event.request.method !== 'GET'
+    || event.request.url.includes('laravel-json-api')
+    || event.request.url.includes('kit502')
     || event.request.url.includes('lovemeetstech2024')
     || event.request.url.includes('googleapis.com')
   ) {
